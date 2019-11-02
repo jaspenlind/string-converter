@@ -1,19 +1,18 @@
 import { StringLike } from "../../types";
 
-export const convertToBoolean = (value: StringLike | undefined): boolean | undefined => {
-  const truthy = ["true", "True", "1"];
-  const falsy = ["false", "False", "0"];
+const booleanValues = new Map<StringLike | undefined, boolean | undefined>([
+  ["true", true],
+  ["True", true],
+  ["1", true],
+  ["false", false],
+  ["False", false],
+  ["0", false],
+  [undefined, undefined]
+]);
 
-  const isTrue = () => truthy.find(x => x === value) !== undefined;
-  const isFalse = () => falsy.find(x => x === value) !== undefined;
-
-  if (isTrue()) {
-    return true;
-  }
-
-  if (isFalse()) {
-    return false;
-  }
-
-  return undefined;
-};
+/**
+ * Converts a `StringLike` value to `boolean`
+ * @param value - The value to convert
+ * @returns The converted boolean `value` or `undefined`
+ */
+export const convertToBoolean = (value?: StringLike): boolean | undefined => booleanValues.get(value);

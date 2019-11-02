@@ -1,11 +1,4 @@
-import { convert, StringConvertible } from "../src";
-import { convertToNumber, convertToBoolean, convertToString } from "../src/lib/converters";
-
-const toStringFunc = (): StringConvertible => {
-  return {
-    toString: () => "some string"
-  };
-};
+import { convert } from "../src";
 
 describe("stringConverter", () => {
   describe("convert", () => {
@@ -18,54 +11,11 @@ describe("stringConverter", () => {
     });
 
     it("can convert to string", () => {
-      expect(typeof convert(toStringFunc())).toBe("string");
+      expect(typeof convert("string")).toBe("string");
     });
 
     it("can handle undefined", () => {
       expect(convert(undefined)).toBeUndefined();
-    });
-  });
-
-  describe("convertToNumber", () => {
-    it("can convert to number", () => {
-      const number = 42;
-      expect(convertToNumber(number)).toBe(number);
-    });
-
-    it("can handle undefined", () => {
-      expect(convertToNumber(undefined)).toBeUndefined();
-    });
-  });
-
-  describe("convertToBoolean", () => {
-    it("can convert truthy values", () => {
-      expect(convertToBoolean("true")).toBe(true);
-      expect(convertToBoolean("True")).toBe(true);
-      expect(convertToBoolean("1")).toBe(true);
-    });
-
-    it("can convert falsy values", () => {
-      expect(convertToBoolean("false")).toBe(false);
-      expect(convertToBoolean("False")).toBe(false);
-      expect(convertToBoolean("0")).toBe(false);
-    });
-
-    it("can handle undefined", () => {
-      expect(convertToBoolean(undefined)).toBeUndefined();
-    });
-  });
-
-  describe("convertToString", () => {
-    it("can convert StringConvertible", () => {
-      expect(convertToString(toStringFunc())).toBeDefined();
-    });
-
-    it("can return string", () => {
-      expect(convertToString("str")).toBe("str");
-    });
-
-    it("can handle undefined", () => {
-      expect(convertToString(undefined)).toBeUndefined();
     });
   });
 });

@@ -18,4 +18,27 @@ npm install string-converter
 
 ## Usage
 
-tbd.
+```js
+import { convert } from "string-converter";
+
+const numericValue = convert("42");
+==> 42
+
+const booleanValue = convert("1");
+==> true
+
+const stringValue = convert("some string");
+==> "some string"
+
+const objectWithValue = {
+	value: 42,
+	toString: () => value.toString()
+};
+const stringValue = convert(objectWithValue);
+==> "42";
+```
+
+## Test
+```shell
+npm test
+```
