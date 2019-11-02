@@ -38,6 +38,10 @@ const stringValue = convert(objectWithValue);
 ==> "42";
 ```
 
+## Docs
+
+<https://jaspenlind.github.io/string-converter>
+
 ## Test
 
 ```shell
