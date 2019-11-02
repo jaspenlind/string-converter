@@ -31,14 +31,15 @@ const stringValue = convert("some string");
 ==> "some string"
 
 const objectWithValue = {
-	value: 42,
-	toString: () => value.toString()
+  value: 42,
+  toString: () => value.toString()
 };
 const stringValue = convert(objectWithValue);
 ==> "42";
 ```
 
 ## Test
+
 ```shell
 npm test
 ```
