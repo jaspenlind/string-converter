@@ -19,5 +19,9 @@
       "tslib": ["node_modules/tslib/tslib.d.ts"]
     }
   },
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
+  },
   "include": ["src/**/*", "test/**/*"]
 }
