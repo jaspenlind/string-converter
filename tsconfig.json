@@ -15,7 +15,8 @@
     "strict": true,
     "declaration": true,
     "paths": {
-      "*": ["src/types/*", "*"]
+      "*": ["src/types/*", "*"],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
     }
   },
   "include": ["src/**/*", "test/**/*"]
