@@ -1,4 +1,3 @@
-export { convertToBoolean } from "./convertToBoolean";
-export { convertToNumber } from "./convertToNumber";
-export { convertToString } from "./convertToString";
-export { StringConvertible } from "../../types";
+export { convertToBoolean } from "./convert-to-boolean";
+export { convertToNumber } from "./convert-to-number";
+export { convertToString } from "./convert-to-string";

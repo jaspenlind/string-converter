@@ -1,4 +1,5 @@
-import { convertToString, StringConvertible } from "../../src/lib/converters";
+import { convertToString } from "../../src/lib/converters";
+import { StringConvertible } from "../../src/types";
 
 const toStringFunc = (): StringConvertible => {
   return {

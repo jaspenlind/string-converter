@@ -1,4 +1,2 @@
-import { convert } from "./lib/stringConverter";
-
-export { convert };
+export { convert } from "./lib/string-converter";
 export * from "./types";
