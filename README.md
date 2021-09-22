@@ -3,7 +3,7 @@
 Converts strings to other javascript types
 
 [![Build Status](https://travis-ci.com/jaspenlind/string-converter.svg?branch=master)](https://travis-ci.com/jaspenlind/string-converter)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d53c318f91a54f49822d30d9974c1003)](https://www.codacy.com/manual/jaspenlind/string-converter?utm_source=github.com&utm_medium=referral&utm_content=jaspenlind/string-converter&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ba5869054b6846d293e22022020c8b98)](https://www.codacy.com/gh/jaspenlind/string-converter/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaspenlind/string-converter&amp;utm_campaign=Badge_Grade)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Coverage Status](https://coveralls.io/repos/jaspenlind/string-converter/badge.svg?branch=master)](https://coveralls.io/r/jaspenlind/string-converter?branch=master)
 ![David](https://img.shields.io/david/jaspenlind/string-converter)
